@@ -9,11 +9,11 @@ ranNums = [] #name your list and make sure it is empty!
 for index in range(10): #for loop appends 5 numbers to your list, but make sure you name your variable
     ranNums.append(randint(1,50)) #this adds a random number between 1-50 to the list
 
-
 print(ranNums) #print the list!
 
+random_number_to_search = randint(1, 20)
 #Part 2 
-if index in ranNums:
-    print("Number",index,"found in the list!")
+if random_number_to_search in ranNums:
+    print("Number",random_number_to_search,"found in the list!")
 else:
-    print("Number",index,"not found in the list.")
+    print("Number",random_number_to_search,"not found in the list.")
