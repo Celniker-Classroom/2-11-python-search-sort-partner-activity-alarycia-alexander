@@ -11,11 +11,23 @@ for index in range(10): #for loop appends 5 numbers to your list, but make sure 
 
 print(ranNums) #print the list!
 
-#Part 2 
+#Part 2a
 random_number_to_search = randint(1, 20)
 print("Searching for number", random_number_to_search)
 
 if random_number_to_search in ranNums:
     print("Number",random_number_to_search,"found in the list!")
 else:
-    print("Number",random_number_to_search,"not found in the list.")
+    print("Number",random_number_to_search,"not found in the list!")
+
+#Part 2b
+comparisons = 0  # Initialize the counter for comparisons
+found = False  # Variable to track if the number was found
+
+for part2b in ranNums:  # Name your variable in the for loop
+    comparisons += 1  # Increment the counter for each comparison
+    if part2b == random_number_to_search:
+        found = True  # Set found to True if the number is in the list
+        break  # Exit the loop early if the number is found
+
+print("after",comparisons,"comparisons")
