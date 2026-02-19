@@ -31,3 +31,4 @@ def test_random_list():
     print("Test Passed!")
 
 if __name__ == "__main__":
+    test_random_list()
