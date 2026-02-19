@@ -11,8 +11,10 @@ for index in range(10): #for loop appends 5 numbers to your list, but make sure 
 
 print(ranNums) #print the list!
 
-random_number_to_search = randint(1, 20)
 #Part 2 
+random_number_to_search = randint(1, 20)
+print("Searching for number", random_number_to_search)
+
 if random_number_to_search in ranNums:
     print("Number",random_number_to_search,"found in the list!")
 else:
