@@ -30,4 +30,4 @@ for part2b in ranNums:  # Name your variable in the for loop
         found = True  # Set found to True if the number is in the list
         break  # Exit the loop early if the number is found
 
-print("after",comparisons,"comparisons")
+print("After",comparisons,"comparisons")
